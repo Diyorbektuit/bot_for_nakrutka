@@ -12,3 +12,4 @@ REFERRAL_POINT = os.getenv('REFERRAL_POINT')
 storage = MemoryStorage()
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot=bot, storage=storage)
+
