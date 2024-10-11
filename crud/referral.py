@@ -19,6 +19,11 @@ def user_referrals(user_id):
         'referral_users': referral_users
     }
 
+@sync_to_async()
+def user_referrals_count(user):
+    count = user.referrals.all().count()
+    return count
+
 
 @sync_to_async()
 def create_referral(user, offered_user):
